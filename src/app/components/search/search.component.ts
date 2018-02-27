@@ -55,4 +55,8 @@ export class SearchComponent {
     }
     return;
   }
+  cleanHistory(){
+      this.searchHistory = [];
+      this.storage.cleanSearchTable();
+  }
 }

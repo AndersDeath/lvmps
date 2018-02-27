@@ -26,6 +26,9 @@ export class StorageService {
       date: obj.date
     });
     localStorage.setItem("OWLSearch", JSON.stringify(tbl));
+  }
 
+  cleanSearchTable() {
+    localStorage.setItem("OWLSearch", JSON.stringify([]));
   }
 }
